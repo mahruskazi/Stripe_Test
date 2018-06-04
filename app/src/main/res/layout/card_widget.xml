@@ -1,0 +1,56 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.constraint.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:stripe="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="match_parent"
+    android:background="#FFF">
+
+    <com.stripe.android.view.CardInputWidget
+        android:id="@+id/card_input_widget"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:theme="@style/CardWidgetStyle"
+        stripe:layout_constraintEnd_toEndOf="parent"
+        stripe:layout_constraintStart_toStartOf="parent"
+        stripe:layout_constraintTop_toTopOf="parent" />
+
+    <Button
+        android:id="@+id/default_cc"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Use Default Credit Card"
+        stripe:layout_constraintEnd_toEndOf="parent"
+        stripe:layout_constraintStart_toStartOf="parent"
+        stripe:layout_constraintTop_toBottomOf="@+id/card_input_widget" />
+
+    <Button
+        android:id="@+id/next"
+        android:layout_width="wrap_content"
+        android:layout_height="0dp"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Next"
+        stripe:layout_constraintEnd_toEndOf="parent"
+        stripe:layout_constraintStart_toStartOf="parent"
+        stripe:layout_constraintTop_toBottomOf="@+id/default_cc" />
+
+    <TextView
+        android:id="@+id/errorMessage"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="8dp"
+        android:layout_marginStart="8dp"
+        android:layout_marginTop="8dp"
+        android:text="Error"
+        android:visibility="gone"
+        android:textColor="@color/red"
+        stripe:layout_constraintEnd_toEndOf="parent"
+        stripe:layout_constraintStart_toStartOf="parent"
+        stripe:layout_constraintTop_toBottomOf="@+id/next" />
+
+</android.support.constraint.ConstraintLayout>
