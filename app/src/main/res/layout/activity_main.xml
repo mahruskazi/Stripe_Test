@@ -20,4 +20,13 @@
         app:layout_constraintRight_toRightOf="parent"
         tools:layout_editor_absoluteY="182dp" />
 
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Scan"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        android:onClick="scan"/>
+
 </android.support.constraint.ConstraintLayout>
