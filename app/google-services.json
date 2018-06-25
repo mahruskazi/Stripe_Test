@@ -1,0 +1,42 @@
+{
+  "project_info": {
+    "project_number": "231484185891",
+    "firebase_url": "https://paytest-2c2e6.firebaseio.com",
+    "project_id": "paytest-2c2e6",
+    "storage_bucket": "paytest-2c2e6.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:231484185891:android:c469710338a48d47",
+        "android_client_info": {
+          "package_name": "test.socero.paytest"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "231484185891-hfr8dqs6ehidg0us6npmf8qg077pkfka.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBBiZ1PZBGY-hAa9jbe2WbehE3iTc3fXyE"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 1,
+          "other_platform_oauth_client": []
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

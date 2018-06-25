@@ -6,7 +6,62 @@
     android:layout_height="match_parent"
     tools:context="test.socero.paytest.MainActivity">
 
+    <TextView
+        android:id="@+id/event_title"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Wonderland Extravaganza"
+        android:textSize="20sp"
+        android:textColor="#000"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"/>
+
     <ImageView
+        android:id="@+id/event_photo"
+        android:layout_width="wrap_content"
+        android:layout_height="275dp"
+        android:src="@drawable/ic_launcher_background"
+        app:layout_constraintTop_toBottomOf="@id/event_title"
+        android:layout_marginTop="10dp"
+        android:contentDescription="@string/wonderland" />
+
+    <TextView
+        android:id="@+id/event_desc"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="@string/description"
+        app:layout_constraintTop_toBottomOf="@id/event_photo"
+        android:layout_marginTop="10dp"/>
+
+    <TextView
+        android:id="@+id/event_price"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Price: From $10 to $7"
+        android:textSize="17sp"
+        app:layout_constraintTop_toBottomOf="@id/event_desc"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        android:layout_marginTop="10dp"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="BUY"
+        android:onClick="buy"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+    <Button
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="INVITE"
+        android:onClick="invite"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintBottom_toBottomOf="parent"/>
+
+
+    <!--<ImageView
         android:id="@+id/qrCode"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content" />
@@ -27,6 +82,6 @@
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
-        android:onClick="scan"/>
+        android:onClick="scan"/>-->
 
 </android.support.constraint.ConstraintLayout>

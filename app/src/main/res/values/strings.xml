@@ -5,4 +5,6 @@
     <string name="permission_camera_rationale">Access to the camera is needed for detection</string>
     <string name="no_camera_permission">This application cannot run because it does not have the camera permission.  The application will now exit.</string>
     <string name="low_storage_error">Face detector dependencies cannot be downloaded due to low device storage</string>
+    <string name="wonderland">Wonderland</string>
+    <string name="description">Canada\'s Wonderland is a 330-acre (130 ha) theme park located in Vaughan, Ontario, a suburb approximately 40 kilometres (25 mi) north of Downtown Toronto. Opened in 1981 by the Taft Broadcasting Company and The Great-West Life Assurance Company as the first major theme park in Canada, it remains the country\'s largest.</string>
 </resources>
